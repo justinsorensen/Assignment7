@@ -22,9 +22,9 @@ var server = http.createServer(function (request, response) {
                 response.end();
             }else {
 					// Check mime type
-                var temp     = url.lastIndexOf(".");	//string.lastIndexOf(searchValue[, fromIndex])
-                var ext     = url.substring((temp));
-                var mime    = mimes[ext] || 'text/plain';
+                var temp = url.lastIndexOf(".");	//string.lastIndexOf(searchValue[, fromIndex])
+                var ext = url.substring((temp));
+                var mime = mimes[ext] || 'text/plain';
 				
 					// Write the file
 					//response.writeHead(statusCode,[reasonPhrase],[headers])
