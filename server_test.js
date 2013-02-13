@@ -10,7 +10,8 @@ var server = http.createServer(function (request, response) {
 				
 				//Using included "file system" functionality
 				//Other plugins also available to handle these kinds of requests
-				
+		
+		//synchronous alternative: fs.readFileSync(filename,[encoding])
 		//fs.readFile(filename,[encoding],[callback])		
         fs.readFile(url, function(error, content) {
             if(error) {
